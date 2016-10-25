@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"
+    style="border:1px solid black">
+      </canvas>
+    
+    
+    <script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
+
+//Vertical lines
+
+var x=10;
+while (x<400) {
+  
+  ctx.moveTo(x,0);
+  ctx.lineTo(x,400);
+  ctx.stroke();
+  x=x+10
+  ctx.strokeStyle = "red";
+  ctx.stroke();
+}
+
+//Horizantal
+
+var y=10;
+while (y<400) {
+  
+  ctx.moveTo(0,y);
+  ctx.lineTo(400,y);
+  ctx.stroke();
+  y=y+10;
+  ctx.strokeStyle
+  ctx.stroke();
+  }
+  
+
+</script>
+</body>
+</html>
